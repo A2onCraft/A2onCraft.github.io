@@ -88,6 +88,22 @@ const projects = [
 		description: "Sauveurs de Saveurs est une entreprise qui propose des confitures anti-gaspi qui a souhaité une refonte design et stratégie de communication",
 		link: "sauveurs-de-saveurs.html",
 		etat: "actif"
+	},
+	{
+		title: "Sliming Away",
+		tags: ["UX Design", "Jeu Vidéo"],
+		date: "2023-07-13",
+		description: "Sliming Away est un jeu foddian game où le but est d'arriver à la sortie le plus vite possible avec comme seul mouvement : le saut",
+		link: "sliming-away.html",
+		etat: "actif"
+	},
+	{
+		title: "DodgeKill",
+		tags: ["UX Design", "Jeu Vidéo"],
+		date: "2025-03-24",
+		description: "DodgeKill est un jeu d'arcade minimaliste mais intense. Le curseur de la souris est à la fois le cœur et l'arme",
+		link: "dodgekill.html",
+		etat: "actif"
 	}
 ];
 
@@ -99,14 +115,6 @@ const projects = [
 		date: "2022-06-15",
 		description: "Un projet phygital alliant gamification pour les enfants et la facilité d'accès pour les parents lors des courses",
 		link: "picwictoys.html",
-		etat: "inactif"
-	},
-	{
-		title: "Sliming Away",
-		tags: ["UX Design", "Jeu Vidéo"],
-		date: "2023-07-13",
-		description: "Sliming Away est un jeu foddian game où le but est d'arriver à la sortie le plus vite possible avec comme seul mouvement : le saut",
-		link: "sliming-away.html",
 		etat: "inactif"
 	},
 */
@@ -176,7 +184,7 @@ function displayProjects(projects) {
 		const titleElement = $("<div>").addClass("title");
 		const projectTitle = $("<h3>").text(project.title);
 		const tagsElement = project.tags.map(tag => $("<span>").addClass("pastille").addClass(tag.toLowerCase().replace(/\s/g, '-')).text(tag));
-		const descriptionElement = $("<p>").text(project.description);
+		const descriptionElement = $("<p>").text(project.description).addClass("line-clamp");
 
 		titleElement.append(projectTitle, tagsElement);
 		textElement.append(titleElement, descriptionElement);
@@ -345,6 +353,7 @@ $(document).ready(function () {
 			margin: 16,
 			lazyLoad: true,
 			dots: true,
+			nav: true,
 			responsive: {
 				0: {
 					items: 2
