@@ -260,10 +260,10 @@ $(document).ready(function () {
 
 		if (window.innerWidth <= maxWidth && scrollPosition > 0) {
 			header[0].classList.add('scrolled');
-			headerMobile.css('top', '60px');
+			headerMobile.css('top', '92px');
 		} else {
 			header[0].classList.remove('scrolled');
-			headerMobile.css('top', '100px');
+			headerMobile.css('top', '132px');
 		}
 	});
 
