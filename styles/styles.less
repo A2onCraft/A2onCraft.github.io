@@ -93,7 +93,7 @@ h2 {
 	font-family: 'Plus Jakarta Sans';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 64px;
+	font-size: 48px;
 	color: #222;
 
 	span {
@@ -275,9 +275,9 @@ a {
 }
 
 .main-content {
-	background-image: url(../assets/bg-arrow-2.svg);
+	/*background-image: url(../assets/bg-arrow-2.svg);
 	background-repeat: no-repeat;
-	background-position: center top 65px;
+	background-position: center top 65px;*/
 
 	.projects-wrapper {
 		display: flex;
@@ -343,15 +343,15 @@ a {
 		font-size: 48px;
 		color: #FFFFFF;
 		text-shadow:
-			3px 0 0 #329AD7,
-			-3px 0 0 #329AD7,
-			0 3px 0 #329AD7,
-			0 -3px 0 #329AD7,
-			3px 3px 0 #329AD7,
-			-3px -3px 0 #329AD7,
-			3px -3px 0 #329AD7,
-			-3px 3px 0 #329AD7,
-			0px 1px 5px rgba(0, 0, 0, 0.2);
+		3px 0 0 #329AD7,
+		-3px 0 0 #329AD7,
+		0 3px 0 #329AD7,
+		0 -3px 0 #329AD7,
+		3px 3px 0 #329AD7,
+		-3px -3px 0 #329AD7,
+		3px -3px 0 #329AD7,
+		-3px 3px 0 #329AD7,
+		0px 1px 5px rgba(0, 0, 0, 0.2);
 	}
 
 	&:before {
@@ -664,6 +664,14 @@ h6 {
 	font-family: 'Livvic', sans-serif;
 }
 
+p.text-bulle{
+	padding: 16px;
+	background-color: #FFFFFF;
+	border-radius: 24px;
+	filter: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.1));
+	line-height: 1.4;
+}
+
 .presentation {
 	display: flex;
 	align-items: center;
@@ -704,7 +712,7 @@ h6 {
 
 		p {
 			font-weight: 300;
-			font-size: 18px;
+			font-size: 16px;
 		}
 
 		.links {
@@ -787,13 +795,20 @@ body.bg-pattern {
 	.wrapper {
 		display: flex;
 		flex-direction: row;
-		align-items: center;
+		align-items: flex-end;
 		padding: 0px;
-		gap: 64px;
+		gap: 32px;
 		width: 1000px;
 
 		img {
 			filter: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.2));
+		}
+
+		.text-story{
+			padding: 16px;
+			background-color: #FFFFFF;
+			border-radius: 24px 24px 24px 0;
+			filter: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.1));
 		}
 	}
 
@@ -1057,14 +1072,14 @@ b {
 		>h2 {
 			color: #FFFFFF;
 			text-shadow:
-				3px 0 0 #329AD7,
-				-3px 0 0 #329AD7,
-				0 3px 0 #329AD7,
-				0 -3px 0 #329AD7,
-				3px 3px 0 #329AD7,
-				-3px -3px 0 #329AD7,
-				3px -3px 0 #329AD7,
-				-3px 3px 0 #329AD7;
+			3px 0 0 #329AD7,
+			-3px 0 0 #329AD7,
+			0 3px 0 #329AD7,
+			0 -3px 0 #329AD7,
+			3px 3px 0 #329AD7,
+			-3px -3px 0 #329AD7,
+			3px -3px 0 #329AD7,
+			-3px 3px 0 #329AD7;
 		}
 
 		&:before {
@@ -1274,6 +1289,8 @@ footer {
 			margin-top: 32px;
 		}
 
+		
+
 		.img {
 			flex: unset;
 
@@ -1302,7 +1319,7 @@ footer {
 			margin: auto 32px;
 
 			h2 {
-				font-size: 48px;
+				font-size: 32px;
 			}
 
 			.text {
@@ -1336,16 +1353,16 @@ h1 {
 		color: #FFFFFF;
 		font-size: 36px;
 		text-shadow:
-			0px 2px 5px rgba(0, 0, 0, 0.2),
-			/* Ombre floue */
-			3px 0 0 #333,
-			-3px 0 0 #333,
-			0 3px 0 #333,
-			0 -3px 0 #333,
-			3px 3px 0 #333,
-			-3px -3px 0 #333,
-			3px -3px 0 #333,
-			-3px 3px 0 #333;
+		0px 2px 5px rgba(0, 0, 0, 0.2),
+		/* Ombre floue */
+		3px 0 0 #333,
+		-3px 0 0 #333,
+		0 3px 0 #333,
+		0 -3px 0 #333,
+		3px 3px 0 #333,
+		-3px -3px 0 #333,
+		3px -3px 0 #333,
+		-3px 3px 0 #333;
 		/* Ombre de contour */
 	}
 
@@ -1354,10 +1371,10 @@ h1 {
 		font-size: 64px;
 		font-weight: bold;
 		background: linear-gradient(to right,
-				#B16CEA 0%,
-				#FF5E69 60%,
-				#FF8A56 80%,
-				#FFA84B 100%);
+			#B16CEA 0%,
+			#FF5E69 60%,
+			#FF8A56 80%,
+			#FFA84B 100%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
@@ -1471,7 +1488,7 @@ h1 {
 	}
 
 	h2 {
-		font-size: 48px;
+		font-size: 32px;
 	}
 
 	.presentation {
@@ -1482,13 +1499,13 @@ h1 {
 				span {
 					text-align: center;
 					width: 100%;
-					font-size: 48px;
+					font-size: 32px;
 				}
 			}
 
 			p {
 				text-align: center;
-				font-size: 18px;
+				font-size: 16px;
 			}
 
 			.links {
