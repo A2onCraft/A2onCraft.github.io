@@ -135,6 +135,7 @@ $(document).ready(function () {
 		event.preventDefault();
 		window.location.href = 'mailto:' + atob('YW50b2luZWRpb24wNjA2QGdtYWlsLmNvbQ==');
 	});
+
 });
 
 function filterProjectsByTagAndDate(projects, tag) {
