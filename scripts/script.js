@@ -58,14 +58,6 @@ const projects = [
 		etat: "actif"
 	},
 	{
-		title: "Petit Futé",
-		tags: ["Refonte", "UX Design", "UI Design", "Développement Web"],
-		date: "2099-01-10",
-		description: "Étant UX/UI Designer & Développeur Web à Petit Futé, j'ai eu l'occasion de travailler sur une multitude de projets concernant ces points",
-		link: "petitfute.html",
-		etat: "inactif"
-	},
-	{
 		title: "Dis-Le",
 		tags: ["UX Design", "UI Design"],
 		date: "2023-10-06",
@@ -109,6 +101,15 @@ const projects = [
 
 
 /*
+
+	{
+		title: "Petit Futé",
+		tags: ["Refonte", "UX Design", "UI Design", "Développement Web"],
+		date: "2099-01-10",
+		description: "Étant UX/UI Designer & Développeur Web à Petit Futé, j'ai eu l'occasion de travailler sur une multitude de projets concernant ces points",
+		link: "petitfute.html",
+		etat: "inactif"
+	},
 	{
 		title: "PicWicToys",
 		tags: ["Refonte", "UX Design"],
