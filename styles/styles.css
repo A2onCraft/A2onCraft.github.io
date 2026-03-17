@@ -770,7 +770,7 @@ body.bg-pattern:before {
 .header-img img {
   cursor: auto;
   width: 100%;
-  max-height: 200px;
+  max-height: 300px;
   object-fit: cover;
 }
 b {
